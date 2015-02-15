@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Kaljaa koneeseen</string>
+    <string name="action_settings">Poistu</string>
+    <string name="title_activity_menu">Kaljaa koneeseen</string>
+
+</resources>
