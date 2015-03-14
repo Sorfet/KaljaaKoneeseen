@@ -1,31 +1,15 @@
 package com.example.saz.kaljaakoneeseen;
 
-import android.media.Image;
 import android.support.v7.app.ActionBarActivity;
-import com.example.saz.kaljaakoneeseen.R;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
-import android.net.Uri;
-import android.os.Bundle;
-import android.view.View;
-import android.widget.ImageButton;
 import android.view.View.OnClickListener;
-import android.widget.*;
 import android.media.MediaPlayer;
-import java.util.*;
-import java.math.*;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
-import android.graphics.drawable.*;
-import java.io.File;
 import java.lang.*;
-import android.app.AlertDialog;
-import android.content.DialogInterface;
+
 
 
 import android.widget.Button;
@@ -41,12 +25,20 @@ public class MenuActivity extends ActionBarActivity  {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        //piilotetaan menubar
+        android.support.v7.app.ActionBar actionBar = getSupportActionBar();
+        actionBar.hide();
+
+
         setContentView(R.layout.activity_menu);
 
-        final MediaPlayer mp = MediaPlayer.create(this, R.raw.menumusic);
-        mp.setVolume(0.1f, 0.1f);
 
-        mp.start();
+
+        //final MediaPlayer mp = MediaPlayer.create(this, R.raw.menumusic);
+        //mp.setVolume(0.1f, 0.1f);
+
+        //mp.start();
         g = (Global)getApplication();
 
 
@@ -63,7 +55,7 @@ public class MenuActivity extends ActionBarActivity  {
         //Uusipeli painike
         uusipeliNappi.setOnClickListener(new OnClickListener() {
             public void onClick(View v) {
-                mp.stop();
+        //        mp.stop();
                 startActivity(new Intent(MenuActivity.this, MainActivity.class));
             }
         });
@@ -92,7 +84,7 @@ public class MenuActivity extends ActionBarActivity  {
         poistumisNappi.setOnClickListener(new OnClickListener() {
             public void onClick(View v) {
 
-                mp.stop();
+         //       mp.stop();
 
 
                 //POistumiskäsky tänne
