@@ -4,5 +4,6 @@
     <string name="app_name">Huikka</string>
     <string name="action_settings">Poistu</string>
     <string name="title_activity_menu">Huikka</string>
+    <string name="tietoa">Tietoa</string>
 
 </resources>

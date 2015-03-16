@@ -1,5 +1,7 @@
 package com.example.saz.kaljaakoneeseen;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -84,13 +86,8 @@ public class MenuActivity extends ActionBarActivity  {
         poistumisNappi.setOnClickListener(new OnClickListener() {
             public void onClick(View v) {
 
-         //       mp.stop();
 
-
-                //POistumiskäsky tänne
-
-                finish();
-                System.exit(0);
+              aboutTeksti();
 
             }
         });
@@ -99,7 +96,49 @@ public class MenuActivity extends ActionBarActivity  {
 
 
 
+
+
+
     }
+
+    public void aboutTeksti(){
+
+        String teksti = "Huikka on perinteinen perjantai-illan pelastaja! Korttipakka puuttuu, mutta juomapeliä olisi hauska pelata? Huikka pelastaa! Tämä korttijuomapelien sekasikiölapsi saa " +
+                "illan kulumaan rattoisasti taaten hauskat aloittelumeiningit suomalaiseen tyyliin !" +
+                "\n \n" +
+                " \n OHJEET PELAAMISEEN:" +
+                "\n - Ensin valitse pelaajien lukumäärä väliltä 2-12" +
+                "\n - Tämän jälkeen aloita uusi peli." +
+                "\n - Aloita peli korttia painamalla. Saat uuden kortin aina kun painat korttia. Kortin alapuolella on sääntö lyhennettynä ja ohje-painikkeesta saatte lisätietoa koskien kyseistä" +
+                "sääntöä. Peli kestää yhden korttipakan verran, jonka jälkeen uuden pelin voi aloittaa päävalikon kautta. " +
+                "\n - Yleisrangaistus pelissä on 3 huikkaa virheestä." +
+                " " +
+                "\n \n \n Tekijän yhteystiedot: Sorfet   " +
+                "\n email: Sorfetti@gmail.com";
+
+        AlertDialog.Builder helpBuilder = new AlertDialog.Builder(this);
+        helpBuilder.setTitle("Tietoa sovelluksesta");
+        helpBuilder.setMessage(teksti);
+        helpBuilder.setPositiveButton("Poistu",
+                new DialogInterface.OnClickListener() {
+
+                    public void onClick(DialogInterface dialog, int which) {
+                        // Do nothing but close the dialog
+                    }
+                });
+
+        // Remember, create doesn't show the dialog
+        AlertDialog helpDialog = helpBuilder.create();
+        helpDialog.show();
+
+
+
+    }
+
+
+
+
+
 
 
 

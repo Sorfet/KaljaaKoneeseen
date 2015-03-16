@@ -78,8 +78,8 @@ public class MainActivity extends ActionBarActivity {
         pelaaja.setText("Pelaaja: "+vuorossaOleva);
 
         //asetetaan ylälogo
-        ylaKuva = (ImageView) findViewById(R.id.ylaLogo);
-        ylaKuva.setBackgroundResource(R.drawable.ylakomponentti);
+       // ylaKuva = (ImageView) findViewById(R.id.ylaLogo);
+       // ylaKuva.setBackgroundResource(R.drawable.ylakomponentti);
 
         //alustetaan painike ja tulosteksti
         kuvaPainike = (ImageView) findViewById(R.id.kuvaKortti);
@@ -276,7 +276,7 @@ public class MainActivity extends ActionBarActivity {
         pakka.add(new Kortti(2,1,2,"Anna 3", R.drawable.h2));
         pakka.add(new Kortti(3,1,3,"Juokaa 1,2,3", R.drawable.h3));
         pakka.add(new Kortti(4,1,4,"Hitler", R.drawable.h4));
-        pakka.add(new Kortti(5,1,5,"Hitler", R.drawable.h5));
+        pakka.add(new Kortti(5,1,5,"", R.drawable.h5));
         pakka.add(new Kortti(6,1,6,"Kategoria", R.drawable.h6));
         pakka.add(new Kortti(7,1,7,"Vesiputous", R.drawable.h7));
         pakka.add(new Kortti(8,1,8,"Peukku", R.drawable.h8));
