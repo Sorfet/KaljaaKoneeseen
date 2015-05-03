@@ -12,8 +12,6 @@ import java.lang.*;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.widget.Button;
-import com.example.saz.kaljaakoneeseen.R;
-import android.app.Activity;
 
 
 
