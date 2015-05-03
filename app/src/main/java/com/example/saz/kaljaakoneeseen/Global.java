@@ -1,9 +1,8 @@
 package com.example.saz.kaljaakoneeseen;
 
-/**
- * Created by Saz on 14.2.2015.
- */
+
 import android.app.*;
+
 
 
 

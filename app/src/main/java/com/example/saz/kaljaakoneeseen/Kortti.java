@@ -1,10 +1,6 @@
 package com.example.saz.kaljaakoneeseen;
 
-/**
- * Created by Saz on 13.2.2015.
- */
-import android.graphics.drawable.Drawable;
-import android.widget.*;
+
 
 public class Kortti {
 

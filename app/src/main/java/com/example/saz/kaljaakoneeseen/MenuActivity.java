@@ -11,7 +11,8 @@ import android.content.Intent;
 import android.view.View.OnClickListener;
 import android.media.MediaPlayer;
 import java.lang.*;
-
+import com.example.saz.kaljaakoneeseen.R;
+import android.app.Activity;
 
 
 import android.widget.Button;
@@ -19,21 +20,18 @@ import android.widget.Button;
 
 public class MenuActivity extends ActionBarActivity  {
 
-
     Global g;
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         //piilotetaan menubar
-        android.support.v7.app.ActionBar actionBar = getSupportActionBar();
+       android.support.v7.app.ActionBar actionBar = getSupportActionBar();
         actionBar.hide();
 
 
-        setContentView(R.layout.activity_menu);
+        setContentView(com.example.saz.kaljaakoneeseen.R.layout.activity_menu);
 
 
 
@@ -103,17 +101,19 @@ public class MenuActivity extends ActionBarActivity  {
 
     public void aboutTeksti(){
 
-        String teksti = "Huikka on perinteinen perjantai-illan pelastaja! Korttipakka puuttuu, mutta juomapeliä olisi hauska pelata? Huikka pelastaa! Tämä korttijuomapelien sekasikiölapsi saa " +
+                String teksti = "Huikka on perinteinen perjantai-illan pelastaja! Korttipakka puuttuu, mutta juomapeliä olisi hauska pelata? Huikka pelastaa! Tämä korttijuomapelien aarre saa " +
                 "illan kulumaan rattoisasti taaten hauskat aloittelumeiningit suomalaiseen tyyliin !" +
                 "\n \n" +
                 " \n OHJEET PELAAMISEEN:" +
                 "\n - Ensin valitse pelaajien lukumäärä väliltä 2-12" +
                 "\n - Tämän jälkeen aloita uusi peli." +
-                "\n - Aloita peli korttia painamalla. Saat uuden kortin aina kun painat korttia. Kortin alapuolella on sääntö lyhennettynä ja ohje-painikkeesta saatte lisätietoa koskien kyseistä" +
-                "sääntöä. Peli kestää yhden korttipakan verran, jonka jälkeen uuden pelin voi aloittaa päävalikon kautta. " +
-                "\n - Yleisrangaistus pelissä on 3 huikkaa virheestä." +
-                " " +
-                "\n \n \n Tekijän yhteystiedot: Sorfet   " +
+                "\n - Aloita peli korttia painamalla. Saat uuden kortin aina kun painat korttia. Kortin alapuolella on säännön nimi ja ohje-painikkeesta saatte lisätietoa koskien kyseistä " +
+                "sääntöä. " +
+                "\n - Yleisrangaistuksen sääntöjen rikkomisesta voi päättää itse!" +
+                "\n" +
+                        "\n" +
+                        "Peli kestää yhden korttipakan verran, jonka jälkeen uuden pelin voi aloittaa päävalikon kautta. \n\n " +
+                "\n \n \n Tekijä: Sorfet   " +
                 "\n email: Sorfetti@gmail.com";
 
         AlertDialog.Builder helpBuilder = new AlertDialog.Builder(this);
